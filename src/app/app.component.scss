@@ -1,0 +1,48 @@
+#page-dashboard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0a0030;
+  background-image: -moz-radial-gradient(circle, #002050 0%, #05001a 100%);
+  background-image: -webkit-radial-gradient(circle, #002050 0%, #05001a 100%);
+  background-image: radial-gradient(circle, #002050 0%, #05001a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002050",endColorstr="#05001a",GradientType=1);
+
+  .box-content {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 30px;
+      z-index: 999;
+      .box-title {
+          color: #fff;
+          font-size: 1.4rem;
+          font-family: 'Press Start 2P';
+          text-align: center;
+          em.style-write {
+              display: inline-block;
+              width: 3px;
+              height: 34px;
+              margin-left: 4px;
+              background-color: #fff;
+              animation-duration: 0.2s;
+              animation-name: writePoint;
+              animation-iteration-count: infinite;
+              text-align: left;
+          }
+          @keyframes writePoint {
+              from {
+                  opacity: 0;
+              }
+              to {
+                  opacity: 1;
+              }
+          }
+      }
+  }
+}
+
